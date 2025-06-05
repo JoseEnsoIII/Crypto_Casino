@@ -2,26 +2,30 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
-  background-color: #1a202c; /* bg-gray-900 */
+  background-color: #1a202c;
   color: white;
-  padding: 3rem 0; /* py-12 */
+  padding: 3rem 0;
+  text-align: center; /* added */
 `;
 
 const Container = styled.div`
-  max-width: 1280px; /* container max width */
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1rem; /* px-4 */
+  padding: 0 1rem;
 `;
+
 
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  justify-items: center; /* added */
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(4, 1fr);
   }
 `;
+
 
 const Logo = styled.h3`
   font-size: 1.5rem; /* text-2xl */
