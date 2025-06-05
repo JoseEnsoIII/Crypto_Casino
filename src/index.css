@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root and base font styles */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Force black text everywhere */
+  color: #000000;
+
+  /* Light background */
+  background-color: #2d3748;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Remove color-scheme so no conflicts with forced colors */
+  /* color-scheme: light dark; */
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: #000000;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+a:hover {
+  color: #535bf2; /* subtle blue hover */
+}
+
+/* Body fills full viewport, no flex centering for general layout */
+body {
+  background-color: #2d3748;
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  /* Use block layout, no flex here for general layout */
+  display: block;
+}
+
+/* Headings */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  width: 100%; /* full width text */
+  color: #000000;
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: auto; /* no fixed width */
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Responsive tweaks for light mode only */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #000000;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #535bf2;
+  }
+  button {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}
