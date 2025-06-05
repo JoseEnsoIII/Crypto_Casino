@@ -45,7 +45,7 @@ const Label = styled.label`
 `;
 
 const Input = styled.input`
-  width: 92%;
+  width: 91%;
   background-color: #1f2937; /* bg-gray-800 */
   border: 1px solid #4b5563;
   border-radius: 0.375rem;
