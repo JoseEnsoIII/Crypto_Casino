@@ -45,7 +45,7 @@ const Terms = styled.p`
 
 export default function BonusSection() {
   return (
-    <Section>
+    <Section id="bonus">
       <Container>
         <Title>Exclusive Welcome Bonus</Title>
         <BonusBox>
