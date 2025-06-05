@@ -13,19 +13,17 @@ This project provides a minimal setup for using **React** with **Vite**
 ## Getting Started
 
 Follow these steps to run the project locally.
-
-1. Clone the Repository
-
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+- Clone the Repository
 
+git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 
-2. Install Dependencies
-Make sure you have Node.js v16+ installed.
+- Install Dependencies
+(Make sure you have Node.js v16+ installed.)
 
 npm install
 
-3. Run the Development Server
+- Run the Development Server
 
 npm run dev
